@@ -1,0 +1,37 @@
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Smart Interviewer</title>
+      <link rel="stylesheet" href="../static/assets/css/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+   <body>
+      <div class="login-form">
+         <div class="text">
+            Signup
+         </div>
+         <form method="POST">
+            {% csrf_token %}
+            <div class="field">
+                <div class="fas fa-user"></div>
+                <input type="text" placeholder="Username" name="username">
+             </div>
+            <div class="field">
+               <div class="fas fa-envelope"></div>
+               <input type="text" placeholder="Email or Phone" name="email">
+            </div>
+            <div class="field">
+                <div class="fas fa-lock"></div>
+                <input type="password" placeholder="Password" name="password">
+             </div>
+            <div class="field">
+               <div class="fas fa-lock"></div>
+               <input type="password" placeholder="Confirm Password" name="confirmPassword">
+            </div>
+            <button>Signup</button>
+            
+         </form>
+      </div>
+   </body>
+</html>
